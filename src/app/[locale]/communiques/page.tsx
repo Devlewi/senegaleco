@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  title: "CAMEROUN ECO | Communiqués",
+  title: "SENEGAL ECO | Communiqués",
   description: "Retrouvez toutes les actualités en temps réel dans notre section Communiqués.",
 };
 

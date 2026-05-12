@@ -39,11 +39,11 @@ export async function generateMetadata({
   };
 
   return {
-    title: locale === "en" ? "CAMEROON ECO | HOME" : "CAMEROUN ECO | ACCUEIL",
+    title: locale === "en" ? "CAMEROON ECO | HOME" : "SENEGAL ECO | ACCUEIL",
     description:
       locale === "en"
         ? "CAMEROON ECO is your economic news portal dedicated to Cameroon"
-        : "CAMEROUN ECO est votre portail d'information économique dédié au Cameroun",
+        : "SENEGAL ECO est votre portail d'information économique dédié au Cameroun",
     icons: {
           icon: "/favicon.ico",
           apple: "/apple-touch-icon.png",

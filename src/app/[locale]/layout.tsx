@@ -44,6 +44,22 @@ export default async function RootLayout(props: Props) {
           crossOrigin="anonymous"
         />
 
+
+{/* Google Analytics - Chargement avec la stratégie Next.js */}
+              <Script
+                 strategy="afterInteractive"
+                 src="https://www.googletagmanager.com/gtag/js?id=G-X5CYL0JPNZ"
+               />
+       
+               <Script id="google-analytics" strategy="afterInteractive">
+                 {`
+                   window.dataLayer = window.dataLayer || [];
+                   function gtag(){dataLayer.push(arguments);}
+                   gtag('js', new Date());
+                   gtag('config', 'G-X5CYL0JPNZ');
+                 `}
+               </Script>        
+
 {/*
 <Script
     id="adsense-init"
@@ -482,23 +498,6 @@ export default async function RootLayout(props: Props) {
           </Script>
         </IntlProvider>
       
-       {/* Google Analytics - Script async */}
-       <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-6G7NCZPPCJ"
-        />
-
-        {/* Google Analytics - Initialisation */}
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6G7NCZPPCJ', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
       </body>
     </html>
   );

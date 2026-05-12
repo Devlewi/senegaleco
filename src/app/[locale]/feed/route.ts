@@ -29,12 +29,12 @@ export async function GET(request: Request) {
     const posts = await getArticles(locale);
 
     const feed = new Feed({
-      title: `Cameroun Eco - RSS (${locale.toUpperCase()})`,
+      title: `SENEGAL ECO - RSS (${locale.toUpperCase()})`,
       description: `Flux RSS des derniers articles (${locale})`,
       id: `${apiBaseUrl}/${locale}`,
       link: `${apiBaseUrl}/${locale}`,
       language: locale,
-      copyright: `© ${new Date().getFullYear()} Cameroun Eco`,
+      copyright: `© ${new Date().getFullYear()} SENEGAL ECO`,
       updated: new Date(),
     });
 
@@ -51,7 +51,7 @@ export async function GET(request: Request) {
             ${post.content.rendered}
           ]]>`,
         date: new Date(post.date),
-        author: [{ name: 'webmaster@cameroun-eco.com' }],
+        author: [{ name: 'webmaster@senegal-eco.com' }],
         category: post.categories?.map((catId: number) => {
           const category = post._embedded["wp:term"][0].find((term: WPCategory) => term.id === catId);
           return category ? { name: category.name } : null;

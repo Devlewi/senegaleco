@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const metadata: Metadata = {
-  title: "CAMEROON ECO | Press releases",
+  title: "SENEGAL ECO | Press releases",
   description: "Find all the latest news in real time in our Press releases section.",
 };
 
