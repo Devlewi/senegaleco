@@ -68,13 +68,13 @@ const EspacePub2: React.FC = () => {
               {isMobile ? (
                 //data-revive-zoneid="230"
                 <ins
-                  data-revive-zoneid="23711111"
+                  data-revive-zoneid="312"
                   data-revive-id="16a6633e0a24be5cdd88d46adf91ea32"
                 ></ins>
               ) : (
                 //data-revive-zoneid="229"
                 <ins
-                  data-revive-zoneid="23611111"
+                  data-revive-zoneid="313"
                   data-revive-id="16a6633e0a24be5cdd88d46adf91ea32"
                 ></ins>                
                 

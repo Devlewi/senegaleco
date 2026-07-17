@@ -27,6 +27,16 @@ export default function NavComponent({ locale }: NavComponentProps) {
             <li><Link href={`/${locale}/${categoryPath}/${slugs.agro}`} className="font-interMedium">{menu.agro}</Link></li>
             <li><Link href={`/${locale}/${categoryPath}/${slugs.tech}`}className="font-interMedium">{menu.tech}</Link></li>
             <li><Link href={`/${locale}/${categoryPath}/${slugs.entreprises}`}className="font-interMedium">{menu.entreprises}</Link></li>
+
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.startups}`} className="font-interMedium">{menu.startups}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.fintech}`}className="font-interMedium">{menu.fintech}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.pme}`}className="font-interMedium">{menu.pme}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.entrepreneuriat}`} className="font-interMedium">{menu.entrepreneuriat}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.emploi}`}className="font-interMedium">{menu.emploi}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.agriculture}`}className="font-interMedium">{menu.agriculture}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.minesetenergie}`}className="font-interMedium">{menu.minesetenergie}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.iaeconomie}`}className="font-interMedium">{menu.iaeconomie}</Link></li>
+
           </ul>
         </li>
 
@@ -36,6 +46,9 @@ export default function NavComponent({ locale }: NavComponentProps) {
             <li><Link href={`/${locale}/${categoryPath}/${slugs.banques}`} className="font-interMedium">{menu.banques}</Link></li>
             <li><Link href={`/${locale}/${categoryPath}/${slugs.assurances}`} className="font-interMedium">{menu.assurances}</Link></li>
             <li><Link href={`/${locale}/${categoryPath}/${slugs.marches}`} className="font-interMedium">{menu.marches}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.investissement}`} className="font-interMedium">{menu.investissement}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.banquesetfinance}`} className="font-interMedium">{menu.banquesetfinance}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.brvm}`} className="font-interMedium">{menu.brvm}</Link></li>
           </ul>
         </li>
 
@@ -57,16 +70,15 @@ export default function NavComponent({ locale }: NavComponentProps) {
         </li>
 
         <li className="menu-item menu-item-has-children">
-          <Link href={`/${locale}/${categoryPath}/${slugs.tribune}`}>{menu.tribune}</Link>
+          <Link href={`/${locale}/${categoryPath}/${slugs.analyses}`}>{menu.analyses}</Link>
           <ul className="sub-menu">
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.tribune}`} className="font-interMedium">{menu.tribune}</Link></li>
             <li><Link href={`/${locale}/${categoryPath}/${slugs.interview}`} className="font-interMedium">{menu.interview}</Link></li>
             <li><Link href={`/${locale}/${categoryPath}/${slugs.opinions}`} className="font-interMedium">{menu.opinions}</Link></li>
+            <li><Link href={`/${locale}/${categoryPath}/${slugs.decryptage}`} className="font-interMedium">{menu.decryptage}</Link></li>
           </ul>
         </li>
 
-        <li className="menu-item">
-          <Link href={`/${locale}/${categoryPath}/${slugs.decryptage}`}>{menu.decryptage}</Link>
-        </li>
 
         <li className="menu-item">
           <Link href={`/${locale}/${categoryPath}/${slugs.international}`}>{menu.international}</Link>
